@@ -1,0 +1,17 @@
+{
+  "name": "fetch_files",
+  "version": "0.0.0",
+  "description": "script which fetch all the files in the given URL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moon@ijaal.net",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "jsdom": "^0.10.5",
+    "optimist": "^0.6.1",
+    "request": "^2.36.0"
+  }
+}
