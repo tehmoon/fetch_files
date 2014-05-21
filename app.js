@@ -146,7 +146,7 @@ parseArgs(function(err, opts) {
           var array = [];
 
           window.$("a").each(function() {
-            var value = window.$(this).text();
+            var value = window.$(this).attr("href");
 
             //TODO: desactivate case sensitive
             if(/(\.zip|\.gif|\.jpg|\.gz|\.pkg|\.msi)$/.test(value)) {
