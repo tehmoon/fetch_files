@@ -18,9 +18,9 @@ Usage
 node app.s -d destDir -u url [-c custDir]
 ```
 
---* -d  Directory where the tmp dir is created
---* -u  Url to fetch
---* -c  The tmp dir is the date but you can set a custom name
+..* -d  Directory where the tmp dir is created
+..* -u  Url to fetch
+..* -c  The tmp dir is the date but you can set a custom name
 
 Example
 -------
@@ -31,5 +31,5 @@ node app.js -d . -u http://blog.nodejs.org
 Bug tracker
 -----------
 
---* Multi level is not supported (-d this/first/folder/is/not/created) which means that you have to created the dir first
---* only jpg gif or zip is supported but you can add more in the regex
+..* Multi level is not supported (-d this/first/folder/is/not/created) which means that you have to created the dir first
+..* only jpg gif or zip is supported but you can add more in the regex
