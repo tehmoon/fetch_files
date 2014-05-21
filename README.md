@@ -7,8 +7,8 @@ Installation
 ------------
 
 ```bash
-$> git clone https://github.com/tehmoon/fetch_files
-$> cd fetch_files && npm install
+git clone https://github.com/tehmoon/fetch_files
+cd fetch_files && npm install
 ```
 
 Usage
@@ -21,6 +21,12 @@ node app.s -d destDir -u url [-c custDir]
 --* -d  Directory where the tmp dir is created
 --* -u  Url to fetch
 --* -c  The tmp dir is the date but you can set a custom name
+
+Example
+-------
+```bash
+node app.js -d . -u http://blog.nodejs.org
+```
 
 Bug tracker
 -----------
