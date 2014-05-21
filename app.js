@@ -149,7 +149,14 @@ parseArgs(function(err, opts) {
             var value = window.$(this).text();
 
             //TODO: desactivate case sensitive
-            if(/(\.zip|\.gif|\.jpg)$/.test(value)) array.push(opts.url + "/" + value);
+            if(/(\.zip|\.gif|\.jpg|\.gz|\.pkg|\.msi)$/.test(value)) {
+              //if the value contains http:// or https:// use the value directly
+              if(/^https?:\/\//.test(value)) {
+                array.push(value);
+              } else {
+                array.push(opts.url + "/" + value);
+              }
+            };
           });
 
           console.log("Found " + array.length.toString().green + " files at " + opts.url + "\n");
