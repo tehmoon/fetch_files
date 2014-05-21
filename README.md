@@ -26,6 +26,7 @@ Example
 -------
 ```bash
 node app.js -d . -u http://blog.nodejs.org
+node app.js -d . -u http://www.reddit.com/r/gifs -c reddit-gifs
 ```
 
 Bug tracker
